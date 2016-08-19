@@ -30,11 +30,12 @@
         {
             this.MovieListBox = new System.Windows.Forms.ListBox();
             this.CurrentMoviesGroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TitleTextBox = new System.Windows.Forms.TextBox();
+            this.CategoryTextBox = new System.Windows.Forms.TextBox();
+            this.CostTextBox = new System.Windows.Forms.TextBox();
+            this.SelectionGroupBox = new System.Windows.Forms.GroupBox();
             this.CurrentMoviesGroupBox.SuspendLayout();
+            this.SelectionGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // MovieListBox
@@ -57,53 +58,54 @@
             this.CurrentMoviesGroupBox.TabStop = false;
             this.CurrentMoviesGroupBox.Text = "Current Movies";
             // 
-            // textBox1
+            // TitleTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(658, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 2;
+            this.TitleTextBox.Location = new System.Drawing.Point(23, 63);
+            this.TitleTextBox.Name = "TitleTextBox";
+            this.TitleTextBox.Size = new System.Drawing.Size(100, 22);
+            this.TitleTextBox.TabIndex = 2;
             // 
-            // textBox2
+            // CategoryTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(658, 180);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 3;
+            this.CategoryTextBox.Location = new System.Drawing.Point(23, 110);
+            this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.Size = new System.Drawing.Size(100, 22);
+            this.CategoryTextBox.TabIndex = 3;
             // 
-            // textBox3
+            // CostTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(658, 228);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 4;
+            this.CostTextBox.Location = new System.Drawing.Point(23, 158);
+            this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.Size = new System.Drawing.Size(100, 22);
+            this.CostTextBox.TabIndex = 4;
             // 
-            // groupBox1
+            // SelectionGroupBox
             // 
-            this.groupBox1.Location = new System.Drawing.Point(342, 82);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(240, 359);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.SelectionGroupBox.Controls.Add(this.TitleTextBox);
+            this.SelectionGroupBox.Controls.Add(this.CostTextBox);
+            this.SelectionGroupBox.Controls.Add(this.CategoryTextBox);
+            this.SelectionGroupBox.Location = new System.Drawing.Point(342, 82);
+            this.SelectionGroupBox.Name = "SelectionGroupBox";
+            this.SelectionGroupBox.Size = new System.Drawing.Size(303, 359);
+            this.SelectionGroupBox.TabIndex = 5;
+            this.SelectionGroupBox.TabStop = false;
+            this.SelectionGroupBox.Text = "Your Selection";
             // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SelectionGroupBox);
             this.Controls.Add(this.CurrentMoviesGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SelectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Selection Form";
             this.CurrentMoviesGroupBox.ResumeLayout(false);
+            this.SelectionGroupBox.ResumeLayout(false);
+            this.SelectionGroupBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -111,10 +113,10 @@
 
         private System.Windows.Forms.ListBox MovieListBox;
         private System.Windows.Forms.GroupBox CurrentMoviesGroupBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox TitleTextBox;
+        private System.Windows.Forms.TextBox CategoryTextBox;
+        private System.Windows.Forms.TextBox CostTextBox;
+        private System.Windows.Forms.GroupBox SelectionGroupBox;
     }
 }
 
