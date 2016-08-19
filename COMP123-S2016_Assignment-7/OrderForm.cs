@@ -16,5 +16,11 @@ namespace COMP123_S2016_Assignment_7
         {
             InitializeComponent();
         }
+
+        private void OrderForm_Load(object sender, EventArgs e)
+        {
+            Variables variables = Program.variables;
+            textBox1.Text = variables.userSelectionTitle;
+        }
     }
 }

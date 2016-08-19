@@ -8,6 +8,8 @@ namespace COMP123_S2016_Assignment_7
 {
     static class Program
     {
+        public static Variables variables = new Variables();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
