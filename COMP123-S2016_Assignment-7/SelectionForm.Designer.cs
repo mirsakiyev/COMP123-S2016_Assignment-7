@@ -89,28 +89,28 @@
             // TitleTextBox
             // 
             this.TitleTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TitleTextBox.Location = new System.Drawing.Point(9, 38);
+            this.TitleTextBox.Location = new System.Drawing.Point(69, 52);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
-            this.TitleTextBox.Size = new System.Drawing.Size(100, 22);
+            this.TitleTextBox.Size = new System.Drawing.Size(214, 22);
             this.TitleTextBox.TabIndex = 2;
             // 
             // CategoryTextBox
             // 
             this.CategoryTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CategoryTextBox.Location = new System.Drawing.Point(23, 140);
+            this.CategoryTextBox.Location = new System.Drawing.Point(69, 101);
             this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.ReadOnly = true;
-            this.CategoryTextBox.Size = new System.Drawing.Size(100, 22);
+            this.CategoryTextBox.Size = new System.Drawing.Size(114, 22);
             this.CategoryTextBox.TabIndex = 3;
             // 
             // CostTextBox
             // 
             this.CostTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CostTextBox.Location = new System.Drawing.Point(23, 196);
+            this.CostTextBox.Location = new System.Drawing.Point(207, 101);
             this.CostTextBox.Name = "CostTextBox";
             this.CostTextBox.ReadOnly = true;
-            this.CostTextBox.Size = new System.Drawing.Size(100, 22);
+            this.CostTextBox.Size = new System.Drawing.Size(76, 22);
             this.CostTextBox.TabIndex = 4;
             // 
             // SelectionGroupBox
@@ -132,7 +132,7 @@
             // CostLabel
             // 
             this.CostLabel.AutoSize = true;
-            this.CostLabel.Location = new System.Drawing.Point(20, 176);
+            this.CostLabel.Location = new System.Drawing.Point(204, 81);
             this.CostLabel.Name = "CostLabel";
             this.CostLabel.Size = new System.Drawing.Size(36, 17);
             this.CostLabel.TabIndex = 8;
@@ -142,16 +142,16 @@
             // 
             this.MoviePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.MoviePictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("MoviePictureBox.InitialImage")));
-            this.MoviePictureBox.Location = new System.Drawing.Point(163, 63);
+            this.MoviePictureBox.Location = new System.Drawing.Point(89, 151);
             this.MoviePictureBox.Name = "MoviePictureBox";
-            this.MoviePictureBox.Size = new System.Drawing.Size(178, 212);
+            this.MoviePictureBox.Size = new System.Drawing.Size(171, 212);
             this.MoviePictureBox.TabIndex = 5;
             this.MoviePictureBox.TabStop = false;
             // 
             // CategoryLabel
             // 
             this.CategoryLabel.AutoSize = true;
-            this.CategoryLabel.Location = new System.Drawing.Point(20, 120);
+            this.CategoryLabel.Location = new System.Drawing.Point(66, 81);
             this.CategoryLabel.Name = "CategoryLabel";
             this.CategoryLabel.Size = new System.Drawing.Size(65, 17);
             this.CategoryLabel.TabIndex = 7;
@@ -160,7 +160,7 @@
             // TitleLabel
             // 
             this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Location = new System.Drawing.Point(6, 18);
+            this.TitleLabel.Location = new System.Drawing.Point(66, 32);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(35, 17);
             this.TitleLabel.TabIndex = 6;
