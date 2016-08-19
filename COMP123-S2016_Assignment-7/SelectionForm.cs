@@ -245,23 +245,23 @@ namespace COMP123_S2016_Assignment_7
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            //// Step 1 - Hide the parent form
-            //this.Hide();
+            // Step 1 - Hide the parent form
+            this.Hide();
 
-            //// Step - 2 Instantiate an object for the form type
-            //// you are going to next
-            //OrderForm orderForm = new OrderForm();
+            // Step - 2 Instantiate an object for the form type
+            // you are going to next
+            OrderForm orderForm = new OrderForm();
 
-            //// Step - 3 Create a property in the next form that 
-            //// we will use to pint to this form
-            //// e.g. public AbilityGeneratorForm previousForm;
+            // Step - 3 Create a property in the next form that 
+            // we will use to piont to this form
+            // e.g. public AbilityGeneratorForm previousForm;
 
-            //// Step 4 - Point this form to the parent form 
-            //// property in the next form
-            ////orderForm.previousForm = this;
+            // Step 4 - Point this form to the parent form 
+            // property in the next form
+            //orderForm.previousForm = this;
 
-            //// Step 5 - Show the next form
-            //orderForm.Show();
+            // Step 5 - Show the next form
+            orderForm.Show();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

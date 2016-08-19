@@ -126,7 +126,7 @@
             this.SelectionGroupBox.Controls.Add(this.CategoryTextBox);
             this.SelectionGroupBox.Location = new System.Drawing.Point(343, 39);
             this.SelectionGroupBox.Name = "SelectionGroupBox";
-            this.SelectionGroupBox.Size = new System.Drawing.Size(325, 537);
+            this.SelectionGroupBox.Size = new System.Drawing.Size(325, 507);
             this.SelectionGroupBox.TabIndex = 5;
             this.SelectionGroupBox.TabStop = false;
             this.SelectionGroupBox.Text = "Your Selection";
