@@ -45,6 +45,8 @@ namespace COMP123_S2016_Assignment_7
 
                     Variables variables = Program.variables;
 
+                                      
+
                     if (value == "Season of the Witch")
                     {
                         CategoryTextBox.Text = categories[3];
@@ -259,6 +261,7 @@ namespace COMP123_S2016_Assignment_7
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+           
             try
             {
                 // Step 1 - Hide the parent form

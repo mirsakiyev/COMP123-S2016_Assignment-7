@@ -210,5 +210,34 @@ namespace COMP123_S2016_Assignment_7
                 TaxTextBox.Text = "$" + variables.userTax.ToString();
             }
         }
+
+        private void StreamButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Step 1 - Hide the parent form
+                this.Hide();
+
+                // Step - 2 Instantiate an object for the form type
+                // you are going to next
+                StreamForm streamForm = new StreamForm();
+
+                // Step - 3 Create a property in the next form that 
+                // we will use to piont to this form
+                // e.g. public AbilityGeneratorForm previousForm;
+
+                // Step 4 - Point this form to the parent form 
+                // property in the next form
+                streamForm.previousForm = this;
+
+                // Step 5 - Show the next form
+                streamForm.Show();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
