@@ -14,6 +14,10 @@ namespace COMP123_S2016_Assignment_7
         public string[] categories = new string[]
         {"Comedy", "Drama", "Action", "Sci-Fi", "Horror", "Thriller", "Family", "New Release"};
 
-        public string userSelection { get; set; }
+        public string userSelectionTitle { get; set; }
+
+        public string userSelectionCategory { get; set; }
+
+        public string userSelectionCost { get; set; }
     }
 }

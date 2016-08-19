@@ -43,14 +43,15 @@ namespace COMP123_S2016_Assignment_7
 
                 Variables variables = new Variables();
                 
-
                 if (value == "Season of the Witch")
                 {
                     CategoryTextBox.Text = variables.categories[3];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.seasonofthewitch);
-                    variables.userSelection = value;
-                                           
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory= variables.categories[3];
+                    variables.userSelectionCost= variables.cost[2].ToString();
+
                 }
 
                 if (value == "The Green Hornet")
@@ -58,7 +59,11 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[2];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.thegreenhornet);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[2];
+                    variables.userSelectionCost = variables.cost[2].ToString();
+
+
                 }
 
                 if (value == "The Dilemma")
@@ -66,7 +71,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[0];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.thedilemma);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[0];
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "Death Race 2")
@@ -74,7 +81,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[2];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.deathrace2);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[2];
+                    variables.userSelectionCost = variables.cost[2].ToString();
                 }
 
                 if (value == "Company Men")
@@ -82,7 +91,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[1];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.companymen);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[1];
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "No Strings Attached")
@@ -90,7 +101,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[0];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.nostringsattached);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[0];
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "The Way Back")
@@ -98,7 +111,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[1];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.thewayback);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[1]; ;
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "The Mechanic")
@@ -106,7 +121,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[2];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.themechanic);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[2];
+                    variables.userSelectionCost = variables.cost[2].ToString();
                 }
 
                 if (value == "The Rite")
@@ -114,7 +131,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[4];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.therite);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[4];
+                    variables.userSelectionCost = variables.cost[2].ToString();
                 }
 
                 if (value == "Sanctum")
@@ -122,7 +141,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[2];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.sanctum);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[2];
+                    variables.userSelectionCost = variables.cost[2].ToString();
                 }
 
                 if (value == "The Other Woman")
@@ -130,7 +151,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[2];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.theotherwoman);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[2];
+                    variables.userSelectionCost = variables.cost[2].ToString();
                 }
 
                 if (value == "The Roommate")
@@ -138,7 +161,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[5];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.theroommate);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[5];
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "Waiting for Forever")
@@ -146,7 +171,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[1];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.waitingforever);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[1];
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "Cedar Rapids")
@@ -154,7 +181,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[0];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.cedarrapids);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[0];
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "Gnomeo and Juliet")
@@ -162,7 +191,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[6];
                     CostTextBox.Text = "$" + variables.cost[0].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.gnomeoandjuliet);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[6];
+                    variables.userSelectionCost = variables.cost[0].ToString();
                 }
 
                 if (value == "Just Go With It")
@@ -170,7 +201,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[0];
                     CostTextBox.Text = "$" + variables.cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.justgowithit);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[0];
+                    variables.userSelectionCost = variables.cost[1].ToString();
                 }
 
                 if (value == "The Eagle")
@@ -178,7 +211,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[2];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.theeagle);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[2];
+                    variables.userSelectionCost = variables.cost[2].ToString();
                 }
 
                 if (value == "I am Number Four")
@@ -186,7 +221,9 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[3];
                     CostTextBox.Text = "$" + variables.cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.iamnumberfour);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[3];
+                    variables.userSelectionCost = variables.cost[2].ToString();
                 }
 
                 if (value == "Footloose")
@@ -194,14 +231,18 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = variables.categories[7];
                     CostTextBox.Text = "$" + variables.cost[3].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.footloose);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[7];
+                    variables.userSelectionCost = variables.cost[3].ToString();
                 }
                 if (value == "Real Steel")
                 {
                     CategoryTextBox.Text = variables.categories[7];
                     CostTextBox.Text = "$" + variables.cost[3].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.realsteel);
-                    variables.userSelection = value;
+                    variables.userSelectionTitle = value;
+                    variables.userSelectionCategory = variables.categories[7];
+                    variables.userSelectionCost = variables.cost[3].ToString();
                 }
             }
         }
