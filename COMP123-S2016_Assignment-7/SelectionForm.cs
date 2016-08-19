@@ -26,5 +26,19 @@ namespace COMP123_S2016_Assignment_7
         {
             Application.Run(new SplashyScreen());
         }
+
+        private void MovieListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TitleTextBox.Text = string.Empty;
+
+            foreach (string value in MovieListBox.SelectedItems)
+            {
+                TitleTextBox.Text = value.ToString();
+                if (value == "The Dilemma")
+                {
+                    MoviePictureBox.Image = new Bitmap(Properties.Resources.thedilemma);
+                }
+            }
+        }
     }
 }
