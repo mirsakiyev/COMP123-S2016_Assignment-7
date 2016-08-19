@@ -54,7 +54,7 @@
             this.SubTotalLabel = new System.Windows.Forms.Label();
             this.SubTotalTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TaxTextBox = new System.Windows.Forms.TextBox();
             this.GrandTotalLabel = new System.Windows.Forms.Label();
             this.GrandTotalTextBox = new System.Windows.Forms.TextBox();
             this.OrderDvdCheckBox = new System.Windows.Forms.CheckBox();
@@ -134,7 +134,7 @@
             this.OrderGroupBox.Controls.Add(this.OrderDvdCheckBox);
             this.OrderGroupBox.Controls.Add(this.GrandTotalTextBox);
             this.OrderGroupBox.Controls.Add(this.GrandTotalLabel);
-            this.OrderGroupBox.Controls.Add(this.textBox1);
+            this.OrderGroupBox.Controls.Add(this.TaxTextBox);
             this.OrderGroupBox.Controls.Add(this.label1);
             this.OrderGroupBox.Controls.Add(this.SubTotalTextBox);
             this.OrderGroupBox.Controls.Add(this.SubTotalLabel);
@@ -296,14 +296,14 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Tax(13%)";
             // 
-            // textBox1
+            // TaxTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.Location = new System.Drawing.Point(146, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(66, 22);
-            this.textBox1.TabIndex = 5;
+            this.TaxTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TaxTextBox.Location = new System.Drawing.Point(146, 138);
+            this.TaxTextBox.Name = "TaxTextBox";
+            this.TaxTextBox.ReadOnly = true;
+            this.TaxTextBox.Size = new System.Drawing.Size(66, 22);
+            this.TaxTextBox.TabIndex = 5;
             // 
             // GrandTotalLabel
             // 
@@ -411,7 +411,7 @@
         private System.Windows.Forms.Button StreamButton;
         private System.Windows.Forms.TextBox SubTotalTextBox;
         private System.Windows.Forms.Label SubTotalLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TaxTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox GrandTotalTextBox;
         private System.Windows.Forms.Label GrandTotalLabel;

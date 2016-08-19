@@ -110,6 +110,27 @@ namespace COMP123_S2016_Assignment_7
                 MoviePictureBox.Image = new Bitmap(Properties.Resources.realsteel);
             }
 
+            double subTotal=0;
+            double dvdPrice =10.00;
+            double tax =13.00;
+            double grandTotal =0;
+
+            try
+            {
+                double userCost = Convert.ToDouble(variables.userSelectionCost);
+                tax = (userCost / 100) * tax;
+                
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            SubTotalTextBox.Text = "$"+variables.userSelectionCost;
+            TaxTextBox.Text = "$"+tax.ToString();
+
 
         }
 
@@ -133,7 +154,7 @@ namespace COMP123_S2016_Assignment_7
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Environment.Exit(1);
+            Application.Exit();
         }
     }
 }

@@ -13,8 +13,8 @@ namespace COMP123_S2016_Assignment_7
 {
     public partial class SelectionForm : Form
     {
-        public decimal[] cost = new decimal[]
-        { 0.99m, 1.99m, 2.99m, 4.99m };
+        public double[] cost = new double[]
+        { 0.99, 1.99, 2.99, 4.99 };
 
         public string[] categories = new string[]
         {"Comedy", "Drama", "Action", "Sci-Fi", "Horror", "Thriller", "Family", "New Release"};
