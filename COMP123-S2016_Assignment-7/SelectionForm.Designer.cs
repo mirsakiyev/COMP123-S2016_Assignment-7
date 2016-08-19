@@ -39,6 +39,7 @@
             this.MoviePictureBox = new System.Windows.Forms.PictureBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.CurrentMoviesGroupBox.SuspendLayout();
             this.SelectionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).BeginInit();
@@ -166,11 +167,19 @@
             this.TitleLabel.TabIndex = 6;
             this.TitleLabel.Text = "Title";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(45, 50);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.TabIndex = 6;
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.SelectionGroupBox);
             this.Controls.Add(this.CurrentMoviesGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -182,6 +191,7 @@
             this.SelectionGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -197,6 +207,7 @@
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Label CategoryLabel;
         private System.Windows.Forms.Label CostLabel;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

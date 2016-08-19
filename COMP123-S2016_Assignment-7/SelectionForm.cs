@@ -18,7 +18,7 @@ namespace COMP123_S2016_Assignment_7
 
         string[] categories = new string[]
             {"Comedy", "Drama", "Action", "Sci-Fi", "Horror", "Thriller", "Family", "New Release"};
-         
+                
 
         public SelectionForm()
         {
@@ -42,11 +42,15 @@ namespace COMP123_S2016_Assignment_7
             {
                 TitleTextBox.Text = value.ToString();
 
+                Variables variables = new Variables();
+
                 if (value == "Season of the Witch")
                 {
                     CategoryTextBox.Text = categories[3];
                     CostTextBox.Text = "$" + cost[2].ToString();
-                    MoviePictureBox.Image = new Bitmap(Properties.Resources.seasonofthewitch);                   
+                    MoviePictureBox.Image = new Bitmap(Properties.Resources.seasonofthewitch);
+                    variables.userSelection = value;
+                                           
                 }
 
                 if (value == "The Green Hornet")
@@ -54,6 +58,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[2];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.thegreenhornet);
+                    variables.userSelection = value;
                 }
 
                 if (value == "The Dilemma")
@@ -61,6 +66,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[0];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.thedilemma);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Death Race 2")
@@ -68,6 +74,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[2];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.deathrace2);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Company Men")
@@ -75,6 +82,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[1];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.companymen);
+                    variables.userSelection = value;
                 }
 
                 if (value == "No Strings Attached")
@@ -82,6 +90,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[0];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.nostringsattached);
+                    variables.userSelection = value;
                 }
 
                 if (value == "The Way Back")
@@ -89,6 +98,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[1];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.thewayback);
+                    variables.userSelection = value;
                 }
 
                 if (value == "The Mechanic")
@@ -96,6 +106,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[2];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.themechanic);
+                    variables.userSelection = value;
                 }
 
                 if (value == "The Rite")
@@ -103,6 +114,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[4];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.therite);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Sanctum")
@@ -110,6 +122,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[2];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.sanctum);
+                    variables.userSelection = value;
                 }
 
                 if (value == "The Other Woman")
@@ -117,6 +130,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[2];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.theotherwoman);
+                    variables.userSelection = value;
                 }
 
                 if (value == "The Roommate")
@@ -124,6 +138,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[5];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.theroommate);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Waiting for Forever")
@@ -131,6 +146,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[1];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.waitingforever);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Cedar Rapids")
@@ -138,6 +154,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[0];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.cedarrapids);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Gnomeo and Juliet")
@@ -145,6 +162,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[6];
                     CostTextBox.Text = "$" + cost[0].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.gnomeoandjuliet);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Just Go With It")
@@ -152,6 +170,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[0];
                     CostTextBox.Text = "$" + cost[1].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.justgowithit);
+                    variables.userSelection = value;
                 }
 
                 if (value == "The Eagle")
@@ -159,6 +178,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[2];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.theeagle);
+                    variables.userSelection = value;
                 }
 
                 if (value == "I am Number Four")
@@ -166,6 +186,7 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[3];
                     CostTextBox.Text = "$" + cost[2].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.iamnumberfour);
+                    variables.userSelection = value;
                 }
 
                 if (value == "Footloose")
@@ -173,13 +194,15 @@ namespace COMP123_S2016_Assignment_7
                     CategoryTextBox.Text = categories[7];
                     CostTextBox.Text = "$" + cost[3].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.footloose);
+                    variables.userSelection = value;
                 }
                 if (value == "Real Steel")
                 {
                     CategoryTextBox.Text = categories[7];
                     CostTextBox.Text = "$" + cost[3].ToString();
                     MoviePictureBox.Image = new Bitmap(Properties.Resources.realsteel);
-                }
+                    variables.userSelection = value;
+                }                
             }
         }
     }

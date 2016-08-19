@@ -60,6 +60,7 @@
     <Compile Include="SplashyScreen.Designer.cs">
       <DependentUpon>SplashyScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Variables.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
