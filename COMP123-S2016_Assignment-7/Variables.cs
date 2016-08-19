@@ -13,5 +13,11 @@ namespace COMP123_S2016_Assignment_7
         public string userSelectionCategory { get; set; }
 
         public string userSelectionCost { get; set; }
+
+        public double userFinalCost { get; set; }
+
+        public double userSubTotalCost { get; set; }
+
+        public double userTax { get; set; }
     }
 }

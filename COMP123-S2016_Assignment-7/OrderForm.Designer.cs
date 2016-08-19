@@ -332,6 +332,7 @@
             this.OrderDvdCheckBox.TabIndex = 8;
             this.OrderDvdCheckBox.Text = "Order the DVD (adds 10$ to your order)";
             this.OrderDvdCheckBox.UseVisualStyleBackColor = true;
+            this.OrderDvdCheckBox.CheckedChanged += new System.EventHandler(this.OrderDvdCheckBox_CheckedChanged);
             // 
             // OrderDvdLabel
             // 

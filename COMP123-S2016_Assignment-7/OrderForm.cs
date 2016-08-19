@@ -110,17 +110,17 @@ namespace COMP123_S2016_Assignment_7
                 MoviePictureBox.Image = new Bitmap(Properties.Resources.realsteel);
             }
 
-            double subTotal=0;
-            double dvdPrice =10.00;
+            double subTotal=0;           
             double tax =13.00;
-            double grandTotal =0;
+            double grandTotal = 0;
+
 
             try
             {
                 double userCost = Convert.ToDouble(variables.userSelectionCost);
                 tax = (userCost / 100) * tax;
-                
-
+                grandTotal = userCost + tax;
+                variables.userFinalCost = grandTotal;
             }
             catch (Exception)
             {
@@ -128,8 +128,13 @@ namespace COMP123_S2016_Assignment_7
                 throw;
             }
 
+            variables.userFinalCost = grandTotal;
+
+            variables.userSubTotalCost = Convert.ToDouble(variables.userSelectionCost);
+
             SubTotalTextBox.Text = "$"+variables.userSelectionCost;
             TaxTextBox.Text = "$"+tax.ToString();
+            GrandTotalTextBox.Text = "$" + grandTotal.ToString();
 
 
         }
@@ -155,6 +160,55 @@ namespace COMP123_S2016_Assignment_7
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void OrderDvdCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Variables variables = Program.variables;
+         
+            if (OrderDvdCheckBox.Checked == true)
+                {
+                OrderDvdTextBox.Enabled = true;
+                OrderDvdLabel.Enabled = true;
+                OrderDvdTextBox.Text = "$10.00";
+
+                variables.userSubTotalCost = variables.userSubTotalCost + 10.00;
+               
+
+                variables.userFinalCost =variables.userFinalCost+10.00;
+                variables.userTax = (variables.userFinalCost / 100) * 13.00;
+
+
+                GrandTotalTextBox.Clear();
+                SubTotalTextBox.Clear();
+                TaxTextBox.Clear();
+
+             
+                GrandTotalTextBox.Text ="$"+ variables.userFinalCost.ToString();
+                SubTotalTextBox.Text = "$" + variables.userSubTotalCost.ToString();
+                TaxTextBox.Text = "$" + variables.userTax.ToString();
+
+
+            }
+            if (OrderDvdCheckBox.Checked == false)
+            {
+                OrderDvdTextBox.Enabled = false;
+                OrderDvdLabel.Enabled = false;
+                variables.userSubTotalCost = variables.userSubTotalCost - 10.00;
+                variables.userFinalCost = variables.userFinalCost - 10.00;
+                OrderDvdTextBox.Text = "";
+                
+                variables.userFinalCost = variables.userFinalCost;
+                variables.userTax = (variables.userFinalCost / 100) * 13.00;
+
+                GrandTotalTextBox.Clear();
+                SubTotalTextBox.Clear();
+                TaxTextBox.Clear();
+
+                SubTotalTextBox.Text = "$" + variables.userSubTotalCost.ToString();
+                GrandTotalTextBox.Text = "$" + variables.userFinalCost.ToString();
+                TaxTextBox.Text = "$" + variables.userTax.ToString();
+            }
         }
     }
 }
