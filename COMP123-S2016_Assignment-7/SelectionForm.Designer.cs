@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionForm));
             this.MovieListBox = new System.Windows.Forms.ListBox();
             this.CurrentMoviesGroupBox = new System.Windows.Forms.GroupBox();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
@@ -36,11 +35,11 @@
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.SelectionGroupBox = new System.Windows.Forms.GroupBox();
             this.CostLabel = new System.Windows.Forms.Label();
-            this.MoviePictureBox = new System.Windows.Forms.PictureBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.NextButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.MoviePictureBox = new System.Windows.Forms.PictureBox();
             this.CurrentMoviesGroupBox.SuspendLayout();
             this.SelectionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).BeginInit();
@@ -140,17 +139,6 @@
             this.CostLabel.TabIndex = 8;
             this.CostLabel.Text = "Cost";
             // 
-            // MoviePictureBox
-            // 
-            this.MoviePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MoviePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MoviePictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("MoviePictureBox.InitialImage")));
-            this.MoviePictureBox.Location = new System.Drawing.Point(52, 155);
-            this.MoviePictureBox.Name = "MoviePictureBox";
-            this.MoviePictureBox.Size = new System.Drawing.Size(227, 333);
-            this.MoviePictureBox.TabIndex = 5;
-            this.MoviePictureBox.TabStop = false;
-            // 
             // CategoryLabel
             // 
             this.CategoryLabel.AutoSize = true;
@@ -189,11 +177,23 @@
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // MoviePictureBox
+            // 
+            this.MoviePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MoviePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MoviePictureBox.Image = global::COMP123_S2016_Assignment_7.Properties.Resources.SteamDefaultAvatar;
+            this.MoviePictureBox.InitialImage = global::COMP123_S2016_Assignment_7.Properties.Resources.SteamDefaultAvatar;
+            this.MoviePictureBox.Location = new System.Drawing.Point(52, 157);
+            this.MoviePictureBox.Name = "MoviePictureBox";
+            this.MoviePictureBox.Size = new System.Drawing.Size(227, 333);
+            this.MoviePictureBox.TabIndex = 5;
+            this.MoviePictureBox.TabStop = false;
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 605);
+            this.ClientSize = new System.Drawing.Size(723, 601);
             this.ControlBox = false;
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.NextButton);
